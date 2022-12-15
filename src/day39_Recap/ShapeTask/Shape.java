@@ -35,7 +35,6 @@ public class Shape {
         return 0;
     }
 
-
     @Override
     public String toString() {
         return "Shape{" +
@@ -44,9 +43,11 @@ public class Shape {
                 ", perimeter='" + perimeter() + '\'' +
                 '}';
     }
-
-
 }
+
+
+
+
 /*
 	Shape:
 	variables:
