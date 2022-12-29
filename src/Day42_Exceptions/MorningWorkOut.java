@@ -1,7 +1,7 @@
 package Day42_Exceptions;
 
 public class MorningWorkOut {
-    public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args) {
 
         System.out.println("-------------Push up started");
 
