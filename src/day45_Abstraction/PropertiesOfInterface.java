@@ -23,15 +23,37 @@ public interface PropertiesOfInterface {
 */
 
 
-  public static void method2(){
-      System.out.println("Static method");
+   static void method2(){
+      System.out.println("Static method");   //it has one copy
   }
 
-  public abstract void method3();
+    void method3();
 
-  public default void method(){
+    default void method4 (){
       System.out.println("Default method");
+  } //it has lots of copy
+
+  class Test implements PropertiesOfInterface{
+
+      @Override
+      public void method3() {
+
+      }
+
+      public static void main(String[] args) {
+          new Test().method4();
+      }
+
+
+
+
+
   }
+
+
+
+
+
 
 
 }
